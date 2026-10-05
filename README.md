@@ -2,7 +2,6 @@
 
 **Author:** Tommaso Centonze
 
-## Abstract
 Object detection is a fundamental computer vision task focused on localizing and classifying objects within images. The introduction of the DEtection TRansformer (DETR) transformed this field by framing detection as a direct set prediction problem. To do so, DETR and its successors leverage an encoder-decoder structure: a Transformer encoder processes image features, while a specialized decoder refines object queries. 
 
 Over time, object detection architectures have grown increasingly complex, adding multi-scale feature extractors and heavy task-specific decoder heads. The segmentation domain, by contrast, has recently moved toward radical simplification. Architectures like EoMT showed that the task-specific decoder can be dropped entirely: by injecting learnable queries into the final layers of a plain Vision Transformer (ViT), the model handles the full predictive process inside the encoder alone, relying on the strong inductive biases of large pre-trained models.
